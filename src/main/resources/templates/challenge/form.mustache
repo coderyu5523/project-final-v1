@@ -2,7 +2,12 @@
 
 <div class="container-fluid">
     <div class="row">
-        <!-- 챌린지 관리와 음식 관리 메뉴 -->
+        <div class="col-md-3" style="margin-top: 10px;">
+            <div style="float: right;">
+                <a href="/challenge/update-form" class="btn btn-warning">챌린지 작성</a>
+            </div>
+        </div>
+
         <aside class="col-md-3" style="text-align: center; margin-top: 50px; width: 250px; margin-left: 200px;">
             <div class="card" style="border-radius: 10px;">
                 <div style="width: 100%;">
@@ -21,6 +26,7 @@
                 </div>
             </div>
         </aside>
+
         <!-- 표 및 페이지네이션 -->
         <div style="flex: 0 0 auto; width: 1200px">
             <div class="container p-5">
@@ -56,7 +62,23 @@
                             </div>
                         </td>
                     </tr>
-                    <!-- 여러 개의 행 추가 가능 -->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img src="산이미지경로" alt="산 이미지" width="100"></td>
+                        <td>산 제목</td>
+                        <td><img src="뱃지이미지경로" alt="뱃지 이미지" width="50"></td>
+                        <td>내용1</td>
+                        <td>내용2</td>
+                        <td>거리</td>
+                        <td class="text-center">
+                            <div class="d-flex justify-content-center">
+                                <a href="/challenge/update-form" class="btn btn-warning me-1">수정</a>
+                                <form action="/board/delete" method="post">
+                                    <button class="btn btn-danger">삭제</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
                 <!-- 표 끝 -->
@@ -69,4 +91,5 @@
             </div>
         </div>
     </div>
+
 </div>
