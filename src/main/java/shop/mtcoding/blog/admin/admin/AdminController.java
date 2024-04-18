@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class AdminController {
 
     // 로그인 폼
-    @GetMapping("/login-form")
+    @GetMapping("/")
     public String loginForm() {
         return "/user/login-form";
     }
