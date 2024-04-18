@@ -2,27 +2,19 @@ package shop.mtcoding.blog.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class UserController {
 
-    @GetMapping("/join-form")
-    public String joinForm() {
-        return "user/join-form";
-    }
-
-    @GetMapping("/login-form")
+    // 로그인 폼
+    @GetMapping("/login/form")
     public String loginForm() {
-        return "user/login-form";
+        return "/user/login-form";
     }
 
-    @GetMapping("/user/update-form")
-    public String updateForm() {
-        return "user/update-form";
-    }
-
-    @GetMapping("/logout")
-    public String logout() {
-        return "redirect:/";
+    @PostMapping("/login")
+    public String login() {
+        return "redirect:/challenge/form";
     }
 }
