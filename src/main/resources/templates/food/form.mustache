@@ -2,8 +2,11 @@
 
 <div class="container-fluid">
     <div class="row">
-        <!-- 챌린지 관리와 음식 관리 메뉴 -->
-        <aside class="col-md-3" style="text-align: center; margin-top: 50px; width: 250px; margin-left: 200px;">
+        <div style="margin-top: 10px; margin-left: 75%">
+            <a href="/food/save-form" class="btn btn-warning">음식 작성</a>
+        </div>
+
+        <aside class="col-md-3" style="text-align: center; margin-top: 60px; width: 180px; margin-left: 10%;">
             <div class="card" style="border-radius: 10px;">
                 <div style="width: 100%;">
                     <div>
@@ -21,7 +24,7 @@
             </div>
         </aside>
         <!-- 표 및 페이지네이션 -->
-        <div style="flex: 0 0 auto; width: 1200px">
+        <div style="width: 1200px">
             <div class="container p-5">
                 <!-- 표 시작 -->
                 <table class="table">
@@ -46,8 +49,8 @@
                         <td>지방</td>
                         <td class="text-center">
                             <div class="d-flex justify-content-center">
-                                <a href="/challenge/update-form" class="btn btn-warning me-1">수정</a>
-                                <form action="/board/delete" method="post">
+                                <a href="/food/update-form" class="btn btn-warning me-1">수정</a>
+                                <form action="/food/delete" method="post">
                                     <button class="btn btn-danger">삭제</button>
                                 </form>
                             </div>
@@ -62,8 +65,8 @@
                         <td>지방</td>
                         <td class="text-center">
                             <div class="d-flex justify-content-center">
-                                <a href="/challenge/update-form" class="btn btn-warning me-1">수정</a>
-                                <form action="/board/delete" method="post">
+                                <a href="/food/update-form" class="btn btn-warning me-1">수정</a>
+                                <form action="/food/delete" method="post">
                                     <button class="btn btn-danger">삭제</button>
                                 </form>
                             </div>
