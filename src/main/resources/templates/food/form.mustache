@@ -1,6 +1,7 @@
 {{> layout/header}}
 {{> layout/sidebar}}
 
+
 <div class="container p-5">
     <!-- 표 시작 -->
     <table class="table">
@@ -12,7 +13,7 @@
             <th scope="col">탄수화물</th>
             <th scope="col">단백질</th>
             <th scope="col">지방</th>
-            <th scope="col" class="text-center">작업</th>
+            <th scope="col" class="text-center">작업</th> <!-- 작업을 중앙으로 정렬 -->
         </tr>
         </thead>
         <tbody>
@@ -23,11 +24,13 @@
             <td>탄수화물</td>
             <td>단백질</td>
             <td>지방</td>
-            <td class="d-flex text-center">
-                <a href="/challenge/update-form" class="btn btn-warning me-1">수정</a>
-                <form action="/board/delete" method="post">
-                    <button class="btn btn-danger">삭제</button>
-                </form>
+            <td class="text-center"> <!-- 작업을 중앙으로 정렬 -->
+                <div class="d-flex justify-content-center">
+                    <a href="/challenge/update-form" class="btn btn-warning me-1">수정</a>
+                    <form action="/board/delete" method="post">
+                        <button class="btn btn-danger">삭제</button>
+                    </form>
+                </div>
             </td>
         </tr>
         <!-- 여러 개의 행 추가 가능 -->
