@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ChallengeController {
 
 
-    @GetMapping("/challenge/challenge-save-form")
+    @GetMapping("/challenge/save-form")
     public String challengeSaveForm() {
         return "/challenge/save-form";
     }
@@ -17,7 +17,7 @@ public class ChallengeController {
         return "/challenge/form";
     }
 
-    @GetMapping("/challenge/challenge-update-form")
+    @GetMapping("/challenge/update-form")
     public String challengeUpdateForm() {
         return "/challenge/update-form";
     }

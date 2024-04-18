@@ -11,12 +11,12 @@ public class FoodController {
         return "redirect:/";
     }
 
-    @GetMapping("/food/food-save-form")
+    @GetMapping("/food/save-form")
     public String foodSaveForm() {
         return "food/save-form";
     }
 
-    @GetMapping("/food/food-update-form")
+    @GetMapping("/food/update-form")
     public String foodUpdateForm() {
         return "food/update-form";
     }
