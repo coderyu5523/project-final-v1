@@ -13,17 +13,16 @@ public class FoodController {
 
     @GetMapping("/food/food-save-form")
     public String foodSaveForm() {
-        return "food/food-save-form";
+        return "food/save-form";
     }
 
     @GetMapping("/food/food-update-form")
     public String foodUpdateForm() {
-        return "food/food-update-form";
+        return "food/update-form";
     }
 
     @GetMapping("/food/form")
     public String foodForm() {
-        return "food/food-form";
+        return "food/form";
     }
-
 }

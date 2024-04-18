@@ -1,0 +1,43 @@
+{{> layout/header}}
+{{> layout/sidebar}}
+
+<div class="container p-5">
+    <!-- 표 시작 -->
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">음식 이미지</th>
+            <th scope="col">음식 이름</th>
+            <th scope="col">탄수화물</th>
+            <th scope="col">단백질</th>
+            <th scope="col">지방</th>
+            <th scope="col" class="text-center">작업</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td><img src="음식 이미지경로" alt="음식 이미지" width="100"></td>
+            <td>음식 이름</td>
+            <td>탄수화물</td>
+            <td>단백질</td>
+            <td>지방</td>
+            <td class="d-flex text-center">
+                <a href="/challenge/update-form" class="btn btn-warning me-1">수정</a>
+                <form action="/board/delete" method="post">
+                    <button class="btn btn-danger">삭제</button>
+                </form>
+            </td>
+        </tr>
+        <!-- 여러 개의 행 추가 가능 -->
+        </tbody>
+    </table>
+    <!-- 표 끝 -->
+
+    <!-- 페이지네이션 -->
+    <ul class="pagination d-flex justify-content-center">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</div>
