@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequiredArgsConstructor
 @RestController
-public class WitchChallengeController {
-    private final WitchChallengeService witchChallengeService ;
+public class WhichChallengeController {
+    private final WhichChallengeService whichChallengeService;
     private final HttpSession session ;
 }

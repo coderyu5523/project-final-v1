@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import shop.mtcoding.bodykey.activity.ActivityService;
 import shop.mtcoding.bodykey.challenge.ChallengeService;
+import shop.mtcoding.bodykey.food.FoodService;
 import shop.mtcoding.bodykey.meal.MealService;
 import shop.mtcoding.bodykey.user.UserService;
 
@@ -16,10 +17,10 @@ import shop.mtcoding.bodykey.user.UserService;
 public class AdminController {
 
     private final UserService userService;
-    private final ActivityService activityService ;
-    private final ChallengeService challengeService ;
-    private final MealService mealService ;
-    private final HttpSession session ;
+    private final ActivityService activityService;
+    private final ChallengeService challengeService;
+    private final FoodService foodService;
+    private final HttpSession session;
 
     // 로그인 폼
     @GetMapping("/")

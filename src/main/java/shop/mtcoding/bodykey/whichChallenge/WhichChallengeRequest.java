@@ -1,4 +1,4 @@
 package shop.mtcoding.bodykey.whichChallenge;
 
-public class WitchChallengeResponse {
+public class WhichChallengeRequest {
 }

@@ -6,5 +6,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 public class EatController {
-    private final EatService eatService ;
+    private final EatService eatService;
 }

@@ -5,6 +5,6 @@ import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
-public class WitchChallengeService {
-    private final WitchChallengeJPARepository witchChallengeJPARepository ;
+public class WhichChallengeService {
+    private final WhichChallengeJPARepository whichChallengeJPARepository;
 }

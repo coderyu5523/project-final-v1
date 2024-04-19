@@ -8,9 +8,9 @@ import shop.mtcoding.bodykey.challenge.Challenge;
 
 @NoArgsConstructor
 @Data
-@Table(name = "witchChallengenge_tb")
+@Table(name = "whichChallengenge_tb")
 @Entity
-public class WitchChallenge {
+public class WhichChallenge {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -26,7 +26,7 @@ public class WitchChallenge {
     private Challenge challenge;
 
     @Builder
-    public WitchChallenge(Integer id, String challengeName, String challengeFilename, Integer meter, String badgeFilename, String location, String content) {
+    public WhichChallenge(Integer id, String challengeName, String challengeFilename, Integer meter, String badgeFilename, String location, String content) {
         this.id = id;
         this.challengeName = challengeName;
         this.challengeFilename = challengeFilename;

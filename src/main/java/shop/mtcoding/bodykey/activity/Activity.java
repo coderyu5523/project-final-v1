@@ -21,7 +21,7 @@ public class Activity {
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
 
-    private Integer walking ; // 걸음수
+    private Integer walking; // 걸음수
     private Integer drinkWater ; // 물 횟수
     private Timestamp createdAt ;
 
