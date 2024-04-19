@@ -29,7 +29,7 @@ public class AdminController {
 
     @PostMapping("/login")
     public String login() {
-        return "redirect:/challenge/form";
+        return "redirect:/challenge/list";
     }
 
     @GetMapping("/logout")
@@ -43,9 +43,9 @@ public class AdminController {
         return "/challenge/save-form";
     }
 
-    @GetMapping("/challenge/form")
+    @GetMapping("/challenge/list")
     public String challengeForm() {
-        return "/challenge/form";
+        return "challenge/list";
     }
 
     @GetMapping("/challenge/update-form")
@@ -66,6 +66,6 @@ public class AdminController {
 
     @GetMapping("/food/form")
     public String foodForm() {
-        return "food/form";
+        return "food/list";
     }
 }
