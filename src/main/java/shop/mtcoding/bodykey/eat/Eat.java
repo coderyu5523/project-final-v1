@@ -15,7 +15,7 @@ public class Eat {
     private Integer id;
     private Integer mealId;  // 식단 id
     private Integer foodId; // 음식 id
-    private Integer quantity; // 양
+    private Integer quantity; // 먹은 양
 
     @Builder
     public Eat(Integer id, Integer mealId, Integer foodId, Integer quantity) {

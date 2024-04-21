@@ -19,10 +19,10 @@ public class Meal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @OneToMany(mappedBy = "meal",fetch = FetchType.LAZY,cascade = CascadeType.REMOVE)
-    private List<Activity> activities = new ArrayList<>();
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Activity activity;
 
-    private String mealFilename ; // 식단 사진 주소
+    private String mealFilename ; // 식단 사진명
     private Timestamp eatTime ; // 먹은 시간
     private Timestamp createdAt;
 

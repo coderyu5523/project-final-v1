@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import shop.mtcoding.bodykey.activity.ActivityService;
 import shop.mtcoding.bodykey.challenge.ChallengeService;
 import shop.mtcoding.bodykey.food.FoodService;
-import shop.mtcoding.bodykey.meal.MealService;
 import shop.mtcoding.bodykey.user.UserService;
 
 @RequiredArgsConstructor
@@ -23,19 +22,19 @@ public class AdminController {
     private final HttpSession session;
 
     // 로그인 폼
-    @GetMapping("/")
+    @GetMapping("/admin")
     public String loginForm() {
-        return "/user/login-form";
+        return "/admin/login-form";
     }
 
-    @PostMapping("/login")
+    @PostMapping("/admin/login")
     public String login() {
         return "redirect:/challenge/list";
     }
 
-    @GetMapping("/logout")
+    @GetMapping("/admin/logout")
     public String logout() {
-        return "redirect:/";
+        return "redirect:/admin";
     }
 
     //챌린지 관련
